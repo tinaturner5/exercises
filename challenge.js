@@ -20,17 +20,54 @@ Then, change these variables to const.
 
 Try to change one of the changed variables now, and observe what happens
 
+If your country split in half, and each half would contain half the population, then how many people would live in each half?
+
+Increase the population of your country by 1 and log the result to the console.
+
+Finland has a population of 6 million. Does your country have more people than Finland?
+
+The average population of a country is 33 million people. Does you country have less people than the average country?
+
+Based on the variables you created, create a new variable description which contains a string with this format: 'Portugal is in Europe, and its 11 million people speak Portuguese'.
+
+
  */
 
 var country = 'Czechia';
 const continent = 'Europe';
-var population = 10;
+var czechPopulation = 10;
 var isIsland = false;
 var language = 'czech';
+var splitInHalf = czechPopulation/2;
+var popIncrease = czechPopulation + 1;
+var portugalStatement = 'Portugal is in Europe, and its 11 million people speak Portuguese'
+
+
+var finPopulation = 6;
+if (finPopulation > czechPopulation) {
+        var displayMessage = 'Finland has bigger population.';
+    } else {
+        var displayMessage = 'Czechia has bigger population.';
+    }
+
+
+var averageCountry = 33;
+if (averageCountry > czechPopulation) {
+    var popCalc = 'Average country has bigger population than Czechia.';
+} else {
+    var popCalc = 'Average country has less population than Czechia.';
+}
+
 
 console.log(country);
 console.log(continent);
-console.log(population);
+console.log(czechPopulation);
 console.log(isIsland);
 console.log(language);
+console.log(splitInHalf);
+console.log(popIncrease);
+console.log(finPopulation);
+console.log(displayMessage);
+console.log(popCalc);
+console.log(portugalStatement)
 

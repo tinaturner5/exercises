@@ -44,18 +44,20 @@ var portugalStatement = 'Portugal is in Europe, and its 11 million people speak 
 
 
 var finPopulation = 6;
+var displayMessage;
 if (finPopulation > czechPopulation) {
-        var displayMessage = 'Finland has bigger population.';
+        displayMessage = 'Finland has bigger population.';
     } else {
-        var displayMessage = 'Czechia has bigger population.';
+        displayMessage = 'Czechia has bigger population.';
     }
 
 
 var averageCountry = 33;
+var popCalc;
 if (averageCountry > czechPopulation) {
-    var popCalc = 'Average country has bigger population than Czechia.';
+    popCalc = 'Average country has bigger population than Czechia.';
 } else {
-    var popCalc = 'Average country has less population than Czechia.';
+    popCalc = 'Average country has less population than Czechia.';
 }
 
 

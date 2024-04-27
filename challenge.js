@@ -59,6 +59,7 @@ if (averageCountry > czechPopulation) {
 }
 
 
+
 console.log(country);
 console.log(continent);
 console.log(czechPopulation);

@@ -73,7 +73,7 @@ function mailValidity ("@" && "\.")
 
 
 
-//4.
+//4..
 
 
 

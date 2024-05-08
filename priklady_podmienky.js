@@ -27,60 +27,77 @@ Strong: 8 or more characters and contains both uppercase and lowercase letters.
 const prompt = require('prompt-sync')();
 let vstup = prompt('Vloz cislo: ');
 
-if (vstup % 2 === 0) {
+function parityChecker (num) {
+    if (num % 2 === 0) {
     console.log("Number is even")
-} else {console.log("Number is odd")
+    } else {
+    console.log("Number is odd")
+    }
 }
+parityChecker(vstup);
+*/
 
- */
+
+
 
 //2. cant use switch hever because it cant process logical statements 0 < temp <= 15
 /*
 const prompt = require('prompt-sync')();
-let temp = prompt('Whats the current temperature?: ');
-temp = parseInt(temp)                 // this makes the input temp a number, otherwise it is string
+let temp1 = prompt('Whats the current temperature?: ');
+temp1 = parseInt(temp1)                 // this makes the input temp a number, otherwise it is string
 
-if (temp < 0) {
-    console.log('Freezing');
+
+function weather (inCelsius) {
+    if (inCelsius < 0) {
+        console.log('Freezing');
+    } else if (0 < inCelsius <= 15) {
+        console.log('Cold');
+    } else if (16 < inCelsius <= 25) {
+        console.log('Moderate');
+    } else if (inCelsius > 25) {
+        console.log('Hot');
+    } else {
+        console.log('Unknown value');
+    }
 }
+weather(temp1);          //cokolvek dosadim do volania sa dosadi do parametra inCelsius
 
-else if (0 < temp <= 15) {
-    console.log('Cold');
-}
-
-else if (16 < temp <= 25) {
-    console.log('Moderate');
-}
-
-else if (temp > 25) {
-    console.log('Hot');
-}
-else {
-    console.log('Unknown value');
-
-}
-
- */
-
+*/
 //3.
-
+/*
 const prompt = require('prompt-sync')();
 let email = prompt('Enter your email: ');
 
-function mailValidity ("@" && "\.")
+
+function mailValidity (mail) {                                    // normally i should use parameter name alongside in the inner function that is my whole if {}
+    if (mail.includes("@") && mail.includes("\.")) {             //methods on W3
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(mailValidity(email));
+*/
+
+//4. A leap year ((is divisible by 4) but (not by 100 unless it is || also divisible by 400)).
+
+const prompt = require('prompt-sync')();
+let year = prompt('Enter the year you want to check: ');      //year = parseInt(year) !!!
+year = parseInt(year)
 
 
+function yearCalc (num) {
+    if (num % 4 === 0 && (num % 100 !== 0 || num % 400 == 0)) {
+        console.log('True ✅ ');
+    } else {
+        console.log('False 🚫 ');
+    }
+}
 
+yearCalc(year);
 
-
-//4..
-
-
-
-
-
-
-
+                                                  //😛  emoji:command + control + space
 
 
 //5. input 3numbers and find the greatest one

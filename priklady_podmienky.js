@@ -23,7 +23,7 @@ Strong: 8 or more characters and contains both uppercase and lowercase letters.
  */
 
 //1.
-/*
+
 const prompt = require('prompt-sync')();
 let vstup = prompt('Vloz cislo: ');
 
@@ -35,13 +35,13 @@ function parityChecker (num) {
     }
 }
 parityChecker(vstup);
-*/
+
 
 
 
 
 //2. cant use switch hever because it cant process logical statements 0 < temp <= 15
-/*
+
 const prompt = require('prompt-sync')();
 let temp1 = prompt('Whats the current temperature?: ');
 temp1 = parseInt(temp1)                 // this makes the input temp a number, otherwise it is string
@@ -62,9 +62,9 @@ function weather (inCelsius) {
 }
 weather(temp1);          //cokolvek dosadim do volania sa dosadi do parametra inCelsius
 
-*/
+
 //3.
-/*
+
 const prompt = require('prompt-sync')();
 let email = prompt('Enter your email: ');
 
@@ -78,7 +78,7 @@ function mailValidity (mail) {                                    // normally i 
 }
 
 console.log(mailValidity(email));
-*/
+
 
 //4. A leap year ((is divisible by 4) but (not by 100 unless it is || also divisible by 400)).
 

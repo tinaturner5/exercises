@@ -63,6 +63,28 @@ function factorial (number) {
     return fac
 }
 console.log(factorial(cislo));
+*/
+//7. Zoradenie pola: Zoraďte dané pole čísel od najmenšieho po najväčšie.
+                         //algoritmus: vezmem 9 a porovnam z dalsim elementom. ak je vacsi tak ich vymenim a posuvam
+let pole = [9,2,1,5,6];
+let tmpArray = [];
+for (let i = pole.length; i > 0; i--) {
+    tmpArray.push(min(pole));                       //najdeme najmensie cislo a vyhodime z pola
+    pole.splice(pole.indexOf(min(pole)), 1);
+}
+pole = tmpArray;
+console.log(pole);
+
+}
+
+
+
+//8. Napíšte funkciu, ktorá vygeneruje prvých n čísel Fibonacciovej
+let fib = [1, 2];                                       //vytvorim si pole na ktorom budem pracovat
+for (let = i = 3; i <= 10; i++) {                   //do i si dam vacsie cislo ako mam uz v let fib lebo chcem pokracovat v poli
+    fib[i] = fib[i-2] + fib [i - 1];            //do cyklu si dosadim cislo ktore je predpredchadzajuce + predchadzajuce = 1+2=3
+    console.log(fib[i]);
+}
 
 
 
@@ -81,7 +103,7 @@ for(let nr of pole) {
     }
 
 }
-*/
+
 
 //10. Výpočet mocniny čísla: Napíšte funkciu, ktorá vypočíta zadanú mocninu zadaného čísla.
 
